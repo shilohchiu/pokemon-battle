@@ -6,15 +6,15 @@ MOVES = {
 }
 
 STRENGTHS_AND_WEAKNESSES = {
-    'normal':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
+    'normal':{'strong_against':{},'weak_against':{'rock', 'steel', 'ghost'},'resist':{},'vulnerable_to':{}},
     'water':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
     'grass':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
     'electric':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
     'ice':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
-    'fighting':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
-    'poison':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
+    'fighting':{'strong_against':{'normal', 'rock', 'steel', 'ice', 'dark'},'weak_against':{'flying', 'poison', 'bug', 'psychic', 'ghost'},'resist':{'rock', 'bug', 'dark'},'vulnerable_to':{'flying', 'psychic', 'fairy'}},
+    'poison':{'strong_against':{'grass', 'fairy'},'weak_against':{'poison', 'ground', 'rock', 'ghost'},'resist':{'fighting', 'poison', 'bug', 'grass', 'fairy'},'vulnerable_to':{'ground', 'psychic'}},
     'ground':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
-    'flying':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
+    'flying':{'strong_against':{Fighting, Bug, Grass, Fairy},'weak_against':{Rock, Steel, Electric},'resist':{Ground, Fighting, Bug, Grass},'vulnerable_to':{Rock, Electric, Ice}},
     'psychic':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
     'bug':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
     'rock':{'strong_against':{},'weak_against':{},'resist':{},'vulnerable_to':{}},
