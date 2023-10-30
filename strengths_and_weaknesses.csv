@@ -1,0 +1,18 @@
+normal,{'strong_against': {}, 'weak_against': {'rock', 'ghost', 'steel'}, 'resist': {'ghost'}, 'vulnerable_to': {'fighting'}}
+water,{'strong_against': {'ground', 'rock', 'fire'}, 'weak_against': {'water', 'dragon', 'grass'}, 'resist': {'ice', 'water', 'steel', 'fire'}, 'vulnerable_to': {'grass', 'electric'}}
+fire,{'strong_against': {'ice', 'grass', 'bug', 'steel'}, 'weak_against': {'fire', 'water', 'dragon', 'rock'}, 'resist': {'bug', 'steel', 'ice', 'grass', 'fairy', 'fire'}, 'vulnerable_to': {'ground', 'water', 'rock'}}
+grass,{'strong_against': {'ground', 'water', 'rock'}, 'weak_against': {'bug', 'poison', 'steel', 'flying', 'grass', 'fire'}, 'resist': {'water', 'grass', 'electric'}, 'vulnerable_to': {'bug', 'poison', 'flying', 'ice', 'fire'}}
+electric,{'strong_against': {'flying', 'water'}, 'weak_against': {'grass', 'ground', 'electric'}, 'resist': {'flying', 'steel', 'electric'}, 'vulnerable_to': {'ground'}}
+ice,{'strong_against': {'flying', 'grass', 'ground', 'dragon'}, 'weak_against': {'ice', 'water', 'steel', 'fire'}, 'resist': {'ice'}, 'vulnerable_to': {'rock', 'fighting', 'steel', 'fire'}}
+fighting,{'strong_against': {'normal', 'steel', 'ice', 'rock', 'dark'}, 'weak_against': {'bug', 'poison', 'flying', 'ghost', 'psychic'}, 'resist': {'rock', 'bug', 'dark'}, 'vulnerable_to': {'flying', 'psychic', 'fairy'}}
+poison,{'strong_against': {'grass', 'fairy'}, 'weak_against': {'rock', 'ghost', 'poison', 'ground'}, 'resist': {'bug', 'poison', 'fighting', 'grass', 'fairy'}, 'vulnerable_to': {'psychic', 'ground'}}
+ground,{'strong_against': {'poison', 'steel', 'electric', 'rock', 'fire'}, 'weak_against': {'grass', 'bug'}, 'resist': {'rock', 'poison'}, 'vulnerable_to': {'ice', 'water', 'grass'}}
+flying,{'strong_against': {'grass', 'fairy', 'fighting', 'bug'}, 'weak_against': {'rock', 'steel', 'electric'}, 'resist': {'ground', 'grass', 'bug', 'fighting'}, 'vulnerable_to': {'ice', 'rock', 'electric'}}
+psychic,{'strong_against': {'poison', 'fighting'}, 'weak_against': {'psychic', 'steel', 'dark'}, 'resist': {'psychic', 'fighting'}, 'vulnerable_to': {'ghost', 'bug', 'dark'}}
+bug,{'strong_against': {'grass', 'psychic', 'dark'}, 'weak_against': {'poison', 'steel', 'fighting', 'flying', 'ghost', 'fairy', 'fire'}, 'resist': {'grass', 'fighting', 'ground'}, 'vulnerable_to': {'flying', 'rock', 'fire'}}
+rock,{'strong_against': {'flying', 'ice', 'fire', 'bug'}, 'weak_against': {'fighting', 'steel', 'ground'}, 'resist': {'rock', 'poison'}, 'vulnerable_to': {'ice', 'water', 'grass'}}
+ghost,{'strong_against': {'ghost', 'psychic'}, 'weak_against': {'dark'}, 'resist': {'normal', 'bug', 'poison', 'fighting'}, 'vulnerable_to': {'ghost', 'dark'}}
+dragon,{'strong_against': {'dragon'}, 'weak_against': {'steel'}, 'resist': {'water', 'grass', 'fire', 'electric'}, 'vulnerable_to': {'ice', 'fairy', 'dragon'}}
+dark,{'strong_against': {'ghost', 'psychic'}, 'weak_against': {'fairy', 'fighting', 'dark'}, 'resist': {'ghost', 'psychic', 'dark'}, 'vulnerable_to': {'fairy', 'fighting', 'bug'}}
+steel,{'strong_against': {'ice', 'rock', 'fairy'}, 'weak_against': {'water', 'steel', 'fire', 'electric'}, 'resist': {'bug', 'poison', 'steel', 'ice', 'psychic', 'rock', 'normal', 'dragon', 'flying', 'grass', 'fairy'}, 'vulnerable_to': {'fighting', 'poison', 'fire'}}
+fairy,{'strong_against': {'fighting', 'dragon', 'dark'}, 'weak_against': {'poison', 'steel', 'fire'}, 'resist': {'bug', 'fighting', 'dark'}, 'vulnerable_to': {'ghost', 'poison', 'dragon'}}

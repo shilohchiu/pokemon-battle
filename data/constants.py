@@ -1,8 +1,22 @@
 import pandas as pd
+from IPython.display import display
+import csv
+import itertools
+import sys
 
 MOVES = {
-    'hydro_pump':{'type':'water','power':'120','accuracy':'100','side_effect':'none'},
-    'dark_pulse':{'type':'water','power':'120','accuracy':'','side_effect':'flinch'}
+    'hydro_pump':{'type':'water',
+                  'category':'special',
+                  'pp':'5',
+                  'power':'120',
+                  'accuracy':'80',
+                  'side_effect':'none'},
+    'dark_pulse':{'type':'dark',
+                  'category':'special',
+                  'pp':'15',
+                  'power':'80',
+                  'accuracy':'100',
+                  'side_effect':'flinch'}
 }
 
 STRENGTHS_AND_WEAKNESSES = {
@@ -12,7 +26,7 @@ STRENGTHS_AND_WEAKNESSES = {
               'vulnerable_to':{'fighting'}},
     'water':{'strong_against':{'ground', 'rock', 'fire'},
              'weak_against':{'water', 'grass', 'dragon'},
-             'resist':{'steel', 'fire', 'water', 'ice'},
+             'resist':{'steel','fire', 'water', 'ice'},
              'vulnerable_to':{'grass', 'electric'}},
     'fire':{'strong_against':{'bug', 'steel', 'grass', 'ice'},
             'weak_against':{'rock', 'fire', 'water', 'dragon'},
@@ -79,6 +93,7 @@ STRENGTHS_AND_WEAKNESSES = {
              'resist':{'fighting', 'bug', 'dark'},
              'vulnerable_to':{'poison', 'ghost', 'dragon'}}
 }
-chart = pd.DataFrame(data=STRENGTHS_AND_WEAKNESSES)
-print(chart)
-# access type and figure out multipliers
+
+if __name__ == '__main__':
+    chart = pd.DataFrame(data=STRENGTHS_AND_WEAKNESSES)
+    display(chart)
